@@ -7,7 +7,7 @@ body .container.background{
     flex-direction: row;    
     justify-content: center;
     align-items: center;
-    margin: 0;
+
 }
 
 body .background{
@@ -17,7 +17,7 @@ body .background{
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 body .footer{
-    margin-top: 7em;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
