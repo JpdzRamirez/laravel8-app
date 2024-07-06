@@ -9,3 +9,12 @@ body .background{
     position: absolute;
     z-index: -1;
 }
+body .footer{
+    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3em;
+    text-align: center;
+    align-content: stretch;
+}
