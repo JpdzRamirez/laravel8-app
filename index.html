@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test commits</title>
+    <title>Restaurante El frugal</title>
     <link rel="stylesheet" href="app.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -14,38 +14,36 @@
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+              <img src="/restaurant.svg" class="bi me-2" width="40" height="32" alt="Logo" >
+              Restaurante el mondadientes
             </a>
   
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <ul class="nav col-12 col-lg-auto my-2 align-items-center justify-content-center my-md-0 text-small">
               <li>
                 <a href="#" class="nav-link text-secondary">
-                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
+                  <img src="/home.svg"  width="40" height="32"alt="Home">
                   Home
                 </a>
               </li>
               <li>
+                <button type="button" class="btn btn-primary position-relative">
+                  Ordenes
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    10+
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+              </li>
+              <li>
                 <a href="#" class="nav-link text-white">
-                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>
-                  Dashboard
+                  <img src="/cash.svg"  width="40" height="32"alt="Home">
+                  Caja
                 </a>
               </li>
               <li>
                 <a href="#" class="nav-link text-white">
-                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
-                  Orders
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
-                  Products
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
-                  Customers
+                  <img src="/client.svg"  width="40" height="32"alt="Home">
+                  Clientes
                 </a>
               </li>
             </ul>
@@ -55,36 +53,39 @@
     </header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Menu</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Reservaciones</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+                Platillos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Comidas rapidas</a></li>
+                <li><a class="dropdown-item" href="#">Menu a la Carta</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Bebidas</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link disabled" aria-disabled="true">
+                <img  width="30" height="22" src="/promotion.svg" alt="Promociones">
+                Promociones
+              </a>
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
+            <button class="btn btn-outline-success buscar" type="submit"><img width="30" height="22" src="/search.svg" alt="Buscar"></button>
           </form>
         </div>
       </div>
@@ -92,44 +93,44 @@
     <main >
         <section>
           <div class="container-fluid background p-3">
-            <!-- <img src="/bk.jpg" alt="background" class="background"> -->
+            
               <div class="row justify-content-md-center">
                   <div class="col d-flex justify-content-center">
                       <div class="card" style="width: 18rem;">
-                          <div class="card-header  text-bg-primary">
-                            Header
+                          <div class="card-header text-center  text-bg-primary">
+                            Plato 1
                           </div>
-                          <img src="/images.png" class="card-img-top" alt="...">
+                          <img src="/hotdog.webp" class="card-img-top" alt="...">
                           <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h5 class="card-title">Perro caliente Americano</h5>
+                              <p class="card-text">Delicioso perro cebollero con salchicha americana y papas a la francesa con queso.</p>
+                              <a href="#" class="btn btn-primary">Agregar al pedido</a>
                             </div>
                         </div>
                   </div>
                   <div class="col d-flex justify-content-center">
                       <div class="card" style="width: 18rem;">
-                          <div class="card-header  text-bg-primary">
-                            Header
+                          <div class="card-header text-center text-bg-primary">
+                            Plato 2
                           </div>
-                          <img src="/images.png" class="card-img-top" alt="...">
+                          <img src="/hamburguesa.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h5 class="card-title">Hamburguesa con Papas</h5>
+                              <p class="card-text">Deliciosa Hamburguesa doble carne con papas a la francesa.</p>
+                              <a href="#" class="btn btn-primary">Agregar al pedido</a>
                             </div>
                         </div>
                   </div>
                   <div class="col d-flex justify-content-center">
                       <div class="card" style="width: 18rem;">
-                          <div class="card-header  text-bg-primary">
-                            Header
+                          <div class="card-header text-center text-bg-primary">
+                            Plato 3
                           </div>
-                          <img src="/images.png" class="card-img-top" alt="...">
+                          <img src="/ensalada.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h5 class="card-title">Ensalada</h5>
+                              <p class="card-text">Deliciosa ensalada con pollo crille.</p>
+                              <a href="#" class="btn btn-primary">Agregar al pedido</a>
                             </div>
                         </div>
                   </div>
@@ -140,30 +141,13 @@
         </section->
       </main>
       <footer class="py-5 footer">
-        <div class="row">
+        <div class="row footer_sections">
           <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
+            <h5>Direccion</h5>
+            <iframe clasS="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5439.597490650817!2d-73.10971925154492!3d7.1163020288756815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1720293117014!5m2!1ses-419!2sco" width="250" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
     
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-          </div>
-    
-          <div class="col-6 col-md-2 mb-3">
+          <div class="col-6 col-md-2 mb-3 second_footer_section">
             <h5>Section</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
@@ -176,19 +160,19 @@
     
           <div class="col-md-5 offset-md-1 mb-3">
             <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
+              <h5>Suscribete para recibir promociones</h5>
+              <p>Notificaremos a su correo los eventos especiales que tenemos todas las semanas.</p>
               <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-primary" type="button">Subscribe</button>
+                <label for="newsletter1" class="visually-hidden">Correo Eléctronico</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Correo">
+                <button class="btn btn-primary" type="button">Subscribirse</button>
               </div>
             </form>
           </div>
         </div>
     
         <div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top">
-          <p>© 2022 Company, Inc. All rights reserved.</p>
+          <p>© 2024 JPDZSoftware TRM. All rights reserved.</p>
           <ul class="list-unstyled d-flex">
             <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
             <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
